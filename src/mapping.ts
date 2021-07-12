@@ -61,8 +61,10 @@ export function handleDeposit(event: Deposit): void {
   // - contract.userInfo(...)
 }
 
-export function handleEmergencyWithdraw(event: EmergencyWithdraw): void {}
+// export function handleEmergencyWithdraw(event: EmergencyWithdraw): void {}
 
-export function handleOwnershipTransferred(event: OwnershipTransferred): void {}
+// export function handleOwnershipTransferred(event: OwnershipTransferred): void {}
 
-export function handleWithdraw(event: Withdraw): void {}
+export function handleWithdraw(event: Withdraw): void {
+  console.log("event.parameters : ", event.parameters)
+}
